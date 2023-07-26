@@ -1,0 +1,47 @@
+.rashed img{
+    height: 30px;
+    width: 30px;
+}
+#slide3{
+    background-image:url(images/banner3.png);
+    
+}
+#slide4{
+    background-image:url(images/banner4.png);
+    
+}
+#slide2{
+    background-image:url(images/banner2.png);
+    
+}
+#slide1{
+    background-image:url(images/banner1.png);
+    
+}
+#heada{
+    border: 2px solid red;
+    margin: 50px;
+    background-color: white;
+    position: ;
+    margin-bottom: 50px;
+}
+
+#rashed2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 300px;
+}
+
+#rashed3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.aj{
+    position:absolute;
+}
