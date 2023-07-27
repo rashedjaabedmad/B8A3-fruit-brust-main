@@ -26,11 +26,11 @@ font-family: 'Manrope', sans-serif;
 </head>
 <body class="font-lato">
 
-    <header>
+    <header >
         <!-- navbar -->
         <section class=" m-24 items-center ml-20 ">
             <div class="  ">
-                <div class="navbar -50 bg-red-500 w-95%  rounded-full h-30">
+                <div class="navbar -50 bg-red-500 lg:w-95%   rounded-full h-30">
                     <div class="navbar-start">
                       <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -64,7 +64,7 @@ font-family: 'Manrope', sans-serif;
                     
                   </div>
 
-                  <div class=" lg:flex items-center gap-4  ">
+                  <div class="lg:flex items-center gap-4  ">
                     <img src="images/logo.png" alt="">
                     <h2 class="text-4xl font-normal">Fruit Burst</h2>
                 </div>
@@ -83,14 +83,14 @@ font-family: 'Manrope', sans-serif;
         <!-- Exotic tastes at  -->
         <section class="p-10 ">
 
-          <div class="carousel w-full bg-opacity-30  ">
+          <div class="carousel w-full bg-opacity-30   ">
             <div id="slide1" class="carousel-item relative w-full">
               <div class="justify-center items-center ">
                 <p class="font-extrabold text-7xl text-slate-200 text-center justify-center px-[300px] "> Exotic tastes at your <br> doorstep</p> <br>
               <p class="text-orange-500 text-lg font-medium px-[450px]">We supply highly quality organic products</p>
               <button id="rashed2" class="btn btn-warning">Warning</button>
               </div>
-              <div class="absolute lg:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" class="btn btn-circle">❮</a> 
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
@@ -110,7 +110,7 @@ font-family: 'Manrope', sans-serif;
               </div>
               
               
-              <div class="absolute lg:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div class="absolute flex  justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-circle">❮</a> 
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
@@ -126,7 +126,7 @@ font-family: 'Manrope', sans-serif;
               </div>
               
               
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div class="absolute flex  justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" class="btn btn-circle">❮</a> 
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
@@ -160,9 +160,9 @@ font-family: 'Manrope', sans-serif;
       <div class="mt-40 ">
 
         <!-- Deal of the day -->
-        <section class="flex justify-between ">
+        <section class="lg:flex justify-between p-10 ">
           <div class="">
-            <h2 class="text-5xl font-semibold">Deal of the day</h2>
+            <h2 class="text-5xl font-semibold ">Deal of the day</h2>
             <p>Contrary to popular belief, is not simply random text. It has roots in <br>a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
           <div>
@@ -196,7 +196,7 @@ font-family: 'Manrope', sans-serif;
         </section>
       </div>
       <!-- rating rating -->
-      <section class="flex gap-6">
+      <section class="lg:flex gap-6">
         <div class="pt-10 ">
           <div class="card w-80 bg-base-100 shadow-xl ">
             <figure class="px-10 pt-10">
@@ -218,9 +218,34 @@ font-family: 'Manrope', sans-serif;
                 <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
                 <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
               </div>
-              <div class="card-actions">
-                <button class="btn btn-primary">Details</button>
-              </div>
+                           <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">Details</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <img class="" src="images/fruit8.png" alt="">
+    <h3 class="font-bold text-lg">Red Dragon</h3>
+    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <div class="rating">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+    </div>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+      <button class="btn">Buy Now</button>
+      
+    </div>
+  </form>
+</dialog>
+
+
+
+
+
+              
             </div>
           </div>
         </div>
@@ -246,9 +271,33 @@ font-family: 'Manrope', sans-serif;
                 <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
                 <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
               </div>
-              <div class="card-actions">
-                <button class="btn btn-primary">Details</button>
-              </div>
+              
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn" onclick="my_modal_5.showModal()">Details</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                      <form method="dialog" class="modal-box">
+                        <div class="justify-center items-center"><img src="images/fruit6.png" alt=""></div>
+                        
+                        <h3 class="font-bold text-lg">Apple</h3>
+                        <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="rating">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="modal-action">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn">Close</button>
+                          <button class="btn">Buy Now</button>
+                          
+                        </div>
+                      </form>
+                    </dialog>
+
+
+
             </div>
           </div>
         </div>
@@ -260,7 +309,7 @@ font-family: 'Manrope', sans-serif;
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
-              <h2 class="card-title">Apple</h2>
+              <h2 class="card-title">Orange</h2>
               <div class="rating rating-lg rating-half">
                 <input type="radio" name="rating-10" class="rating-hidden" />
                 <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
@@ -274,9 +323,34 @@ font-family: 'Manrope', sans-serif;
                 <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
                 <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
               </div>
-              <div class="card-actions">
-                <button class="btn btn-primary">Details</button>
-              </div>
+             
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn" onclick="my_modal_5.showModal()">Details</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                      <form method="dialog" class="modal-box">
+                        <img class="" src="images/fruit8.png" alt="">
+                        <h3 class="font-bold text-lg">Orange</h3>
+                        <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="rating">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="modal-action">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn">Close</button>
+                          <button class="btn">Buy Now</button>
+                          
+                        </div>
+                      </form>
+                    </dialog>
+
+
+
+
+
             </div>
           </div>
         </div>
@@ -288,7 +362,7 @@ font-family: 'Manrope', sans-serif;
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
-              <h2 class="card-title">Apple</h2>
+              <h2 class="card-title">Red Dragon</h2>
               <div class="rating rating-lg rating-half">
                 <input type="radio" name="rating-10" class="rating-hidden" />
                 <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
@@ -302,9 +376,38 @@ font-family: 'Manrope', sans-serif;
                 <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
                 <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
               </div>
-              <div class="card-actions">
-                <button class="btn btn-primary">Details</button>
-              </div>
+             
+               <!-- Open the modal using ID.showModal() method -->
+               <button class="btn" onclick="my_modal_5.showModal()">Details</button>
+               <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                 <form method="dialog" class="modal-box">
+                   <img class="" src="images/fruit8.png" alt="">
+                   <h3 class="font-bold text-lg">Red Dragon</h3>
+                   <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                   <div class="rating">
+                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                   </div>
+                   <div class="modal-action">
+                     <!-- if there is a button in form, it will close the modal -->
+                     <button class="btn">Close</button>
+                     <button class="btn">Buy Now</button>
+                     
+                   </div>
+                 </form>
+               </dialog>
+
+
+
+
+
+
+
+
+
             </div>
           </div>
         </div>
@@ -341,8 +444,48 @@ font-family: 'Manrope', sans-serif;
       </section>
 
      <!-- part4 -->
-<section>
 
+     <!-- meat the team -->
+<section class="items-center">
+
+  <div class="meet-the-team">
+    <div class="jabed">
+      <h1 class="text-5xl font-bold text text-center text-gray-50 pt-10">Meet the team section</h1>
+  <p class="text-center text-gray-50 pt-10"> Contrary to popular belief, is not simply random text. It has roots in a piecebr  <br> of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+  
+  </div>
+
+ <div>
+   <img src="images/member1.png" alt="">
+  <h1 class="text-2xl text-gray-50">Awlad Hossain</h1>
+  <h5 class="text-gray-50">Fruits Expert</h5>
+
+ 
+
+</div>
+  
+
+ <div class="flex gap-3">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#1f5022}</style><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fbfcfd}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+ </div>
+
+
+
+
+
+ 
+
+
+
+
+
+  </div>
 
   
 
@@ -355,11 +498,11 @@ font-family: 'Manrope', sans-serif;
 
   <section >
   
-      <h1 class="text-5xl font-extrabold text-center pb-5">Why Choose Us</h1>
+      <h1 class="lg:text-5xl font-extrabold text-center pb-5">Why Choose Us</h1>
       <p class="font-medium text-center">Contrary to popular belief, is not simply random text. It has roots in a  piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.</p>
 
    <div class=>
-    <div class="flex justify-evenly pt-20 gap-4">
+    <div class="lg:flex  justify-evenly pt-20 gap-4 ">
       <div class=" pt-8">
         <h1 class="font-extrabold pb-7 ">Dedicated Team</h1> <hr>
         <p class="pb-5">Professional employees are there for you to <br> pick the most amazing and fresh fruits.</p>
